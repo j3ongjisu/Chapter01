@@ -1,3 +1,11 @@
 .top {
+    display: flex;
+    text-align: center;
     border-bottom: 2px solid #ddd;
+    background: #f9f9f9;
+}
+
+.top p {
+    margin: 20px 50px 0 auto;
+    font-size: 30px;
 }
