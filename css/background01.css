@@ -1,0 +1,38 @@
+body {
+    height: 200vh;
+}
+
+img {
+    max-width: 100%;
+}
+
+.bg00 {
+    height: 400px;
+    background: url(../images/mainvisual03.jpg) no-repeat fixed center center/cover;
+}
+
+.bg01 {
+    height: 500px;
+    background-image: url(../images/grafflogo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.bg02 {
+    height: 400px;
+    background-image: url(../images/mainvisual01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.bg03 {
+    filter: grayscale(1);
+    height: 400px;
+    background-image: url(../images/mainvisual01.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}

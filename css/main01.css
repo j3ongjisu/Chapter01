@@ -1,0 +1,73 @@
+#mainVisual .itm {
+    height: 600px;
+}
+
+#mainVisual .itm01 {
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .itm02 {
+    background: url(../images/mainvisual02.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .itm03 {
+    background: url(../images/mainvisual03.jpg) no-repeat center center/cover;
+}
+
+#mainVisual .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 999;
+
+    background: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 0;
+    width: 100px;
+    height: 100px;
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+#mainVisual .slick-prev {
+    margin: 0 0 0 -700px;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+#mainVisual .slick-next {
+    margin: 0 0 0 700px;
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* 버튼 가운데로 만들기 */
+#mainVisual .slick-dots {
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+/* 버튼 가로 배치 */
+#mainVisual .slick-dots>* {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+/* 버튼 모양 다듬기 */
+#mainVisual .slick-dots li button {
+    background: tomato;
+    color: white;
+    border-radius: 50%;
+    padding: 5px;
+    font-size: 10px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    outline: none;
+}
+
+#mainVisual .slick-dots li.slick-active button {
+    background: #333;
+}

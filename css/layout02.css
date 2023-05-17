@@ -1,0 +1,206 @@
+h1.tit {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.container {
+    /* 요소 가운데로 배치 */
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid #000;
+    background: yellow;
+}
+
+.itm {
+    background: tomato;
+    color: #fff;
+    text-align: center;
+}
+
+/* .case01 {
+    /* 다단 메뉴를 만들기 어려워서 추천은 안 함 */
+/* float을 가라앉힐 때 보다는 flex에서 많이 사용 */
+/* overflow: hidden; 
+} */
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* clearfix */
+.case01>div {
+    float: left;
+}
+
+.case02>div {
+    /* 순서가 바뀜 */
+    float: right;
+}
+
+/* 인라인 속성은 부모 요소에 적용 */
+.case03 {
+    text-align: center;
+    font-size: 0;
+}
+
+.case03>div {
+    display: inline-block;
+    font-size: 16px;
+}
+
+.case04 .left {
+    float: left;
+}
+
+.case04 .right {
+    float: right;
+}
+
+.stitle {
+    text-align: left;
+    width: 1200px;
+    margin: 50px auto 20px auto;
+}
+
+.stitle i {
+    float: right;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+/* 예시 상단 */
+
+.top_bar {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    line-height: 30px;
+}
+
+.top_bar .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top_bar .inner .slogan {
+    float: left;
+
+}
+
+.top_bar .inner .customer {
+    float: right;
+}
+
+.top_bar .inner .customer li {
+    float: left;
+    padding: 0 10px;
+    border-right: 1px solid #ddd;
+}
+
+/* 원래 header에 background 안 씀  */
+#header {
+    background: #f9f9f9;
+}
+
+#header .inner {
+    width: 1200px;
+    margin: 0 auto;
+    line-height: 100px;
+}
+
+#header h1 {
+    float: left;
+}
+
+#header .service {
+    float: right;
+}
+
+#header .service>* {
+    float: left;
+}
+
+#header .service .gnb {
+    float: left;
+}
+
+#header .service .gnb>ul>li {
+    position: relative;
+    float: left;
+}
+
+#header .service .gnb>ul>li a {
+    display: block;
+    padding: 0 20px;
+}
+
+#header .service .gnb>ul>li~li::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0px;
+    transform: translate(-50%, -50%);
+    width: 1px;
+    /* 폰트 사이즈(기본 16px) 보다 박스 작게 만듦 */
+    height: 12px;
+    background: #ddd;
+}
+
+#header .service .right {
+    float: left;
+    /* 마진 30px은 레이아웃01에 있는 right가 50px이라서, 위에 패딩 20을 빼준 값이다. */
+    margin: 0 0 0 30px;
+}
+
+
+/* 홈페이지 사진 가로 배치하기 */
+#event {
+    padding: 100px 0;
+}
+
+#event h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+#event p {
+    font-size: 15px;
+    font-weight: 300;
+    margin: 0 0 50px 0;
+    text-align: center;
+}
+
+#event .inner {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+#event .inner figure {
+    float: left;
+    width: 33.333333333%;
+    /* flex에서는 gap으로 띄워주고, float에서는 padding으로 띄움  */
+    padding: 0 15px;
+}
+
+#event .inner figure img {
+    width: 100%;
+    height: 370px;
+    object-fit: cover;
+}

@@ -5,45 +5,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>요소의 가로 배치 flex</title>
+    <title>float</title>
     <link rel="stylesheet" href="../css/common.css">
     <link rel="stylesheet" href="../css/font.css">
-    <link rel="stylesheet" href="../css/layout01.css">
+    <link rel="stylesheet" href="../css/layout02.css">
 </head>
 
 <body>
-    <h1 class="tit">요소의 가로 배치 flex <i class="xi-close"></i></h1>
+    <h1 class="tit">float : 요소를 가로 배치하는 옛날 방법</h1>
 
-    <h2>case01 - 가로 배치 기본</h2>
-    <div class="container case01">
+    <h2>case01 - float 기본 가로 배치</h2>
+    <div class="case01 container clearfix">
+        <div class="itm">01</div>
+        <div class="itm">02</div>
+        <!-- <p style="clear:both;"></p> float을 가라앉히는 법 -->
+    </div>
+
+    <h2>case02 - float 오른쪽 배치</h2>
+    <div class="case02 container clearfix">
         <div class="itm">01</div>
         <div class="itm">02</div>
     </div>
 
-    <h2>case02 - 양 끝으로 배치 01</h2>
-    <div class="container case02">
+    <h2>case03 - float 가운데 배치</h2>
+    <div class="case03 container ">
         <div class="itm">01</div>
         <div class="itm">02</div>
     </div>
 
-    <h2>case03 - 양 끝으로 배치 02</h2>
-    <div class="container case03">
-        <div class="itm">01</div>
+    <h2 class="stitle">case04 - 양 끝 배치 <i class="xi-arrow-right"></i>
+    </h2>
+    <div class="case04 container clearfix">
+        <div class="itm left">01</div>
         <div class="itm right">02</div>
-        <div class="itm right2">03</div>
     </div>
 
-    <h2>case04 - 가운데 배치</h2>
-    <div class="container case04">
-        <div class="itm">01</div>
-        <div class="itm right">02</div>
-        <div class="itm right2">03</div>
-    </div>
+    <!-- 어제와 비교해서 html은 같고 css만 다르게 해서 상단 메뉴 만들기 -->
 
     <h2>실습 예시 01 - 상단</h2>
 
     <div class="top_bar">
-        <div class="inner">
+        <div class="inner clearfix">
             <div class="slogan">
                 Lorem ipsum dolor sit amet.
             </div>
@@ -54,23 +56,25 @@
             </ul>
         </div>
     </div>
-
-
     <header id="header">
-        <div class="inner">
+        <div class="inner clearfix">
             <h1>LOGO</h1>
-            <nav class="gnb">
-                <!-- ul>li*4>a{menu0$} -->
-                <ul>
-                    <li><a href="">menu01</a></li>
-                    <li><a href="">menu02</a></li>
-                    <li><a href="">menu03</a></li>
-                    <li><a href="">menu04</a></li>
-                </ul>
-            </nav>
-            <div class="right">010-1234-5678</div>
+            <div class="service">
+                <nav class="gnb">
+                    <!-- ul>li*4>a{menu0$} -->
+                    <ul>
+                        <li><a href="">menu01</a></li>
+                        <li><a href="">menu02</a></li>
+                        <li><a href="">menu03</a></li>
+                        <li><a href="">menu04</a></li>
+                    </ul>
+                </nav>
+                <div class="right">010-1234-5678</div>
+            </div>
         </div>
     </header>
+
+    <!-- 홈페이지 사진 가로 배치하기 -->
 
     <section id="event">
         <h2>Lorem ipsum dolor sit.</h2>
@@ -87,7 +91,6 @@
             </figure>
         </div>
     </section>
-
 </body>
 
 </html>
