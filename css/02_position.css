@@ -1,0 +1,38 @@
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1200px;
+    height: 500px;
+    border: 2px solid #333;
+    background: #fff;
+}
+
+.wrapper>div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-135deg);
+    width: 50px;
+    height: 50px;
+    border-left: 3px solid #333;
+    border-top: 1px solid #333;
+}
+
+.wrapper:hover>div {
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: 0.5s;
+}
+
+.wrapper .eye_left {
+    margin: -100px 0 0 -200px;
+}
+
+.wrapper .eye_right {
+    margin: -100px 0 0 200px;
+}
+
+.wrapper .mouse {
+    margin: 100px 0 0 0px;
+}

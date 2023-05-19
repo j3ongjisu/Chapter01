@@ -1,0 +1,118 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.top_banner .inner {
+    height: 150px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.top_banner.on .inner {
+    height: 0;
+}
+
+.top_banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    background: tomato;
+}
+
+
+/* transfom과 position을 이용한 버튼 위치 조정 */
+.top_banner .btn {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-100%, 100%);
+    margin: 0 0 0 600px;
+    background: tomato;
+    color: #fff;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.top_banner .btn::after {
+    content: "위로 올려";
+}
+
+.top_banner.on .btn::after {
+    content: "아래로 내려";
+}
+
+/* 버튼 눌렀을 때 방향 바꾸게 하기 */
+.top_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+/* ㅡㅡㅡ오른쪽 사이드 배너ㅡㅡㅡ */
+.right_banner {
+    position: fixed;
+    top: 50%;
+    right: -300px;
+
+    width: 300px;
+    height: 400px;
+    background: tomato;
+    transition: 0.5s;
+}
+
+.right_banner.on {
+    right: 0;
+}
+
+.right_banner .btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate(-100%, 0);
+}
+
+.right_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.right_banner .btn i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+}
+
+/* ㅡㅡㅡ왼쪽 사이드 배너ㅡㅡㅡ */
+.left_banner {
+    position: fixed;
+    top: 50%;
+    left: -300px;
+
+    width: 300px;
+    height: 400px;
+    background: tomato;
+    transition: 0.5s;
+}
+
+.left_banner.on {
+    left: 0;
+}
+
+.left_banner .btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(100%, 0);
+}
+
+.left_banner.on .btn i {
+    transform: rotate(180deg);
+}
+
+.left_banner .btn i {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    font-size: 20px;
+}

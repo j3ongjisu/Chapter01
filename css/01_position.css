@@ -1,0 +1,47 @@
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: tomato;
+
+    width: 300px;
+    z-index: 1;
+
+}
+
+.popup2 {
+    position: fixed;
+    top: 60%;
+    left: 60%;
+    transform: translate(-50%, -50%);
+    background: tomato;
+
+    width: 300px;
+    z-index: 1;
+}
+
+.popup3 {
+    position: fixed;
+    top: 70%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    background: tomato;
+
+    width: 300px;
+
+}
+
+img {
+    position: relative;
+    width: 100%;
+    vertical-align: middle;
+}
+
+.btn {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    /* 이미지 뒤에 가려진 버튼을 올릴 수 있음 */
+    z-index: 999;
+}
