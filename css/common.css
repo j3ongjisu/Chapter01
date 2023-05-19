@@ -126,6 +126,11 @@ a {
     text-decoration: none;
 }
 
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
 blockquote,
 q {
     quotes: none;

@@ -1,6 +1,4 @@
 $(function () {
-
-
     $('.top_banner .btn').on('click', function () {
         $('.top_banner').toggleClass('on')
     });

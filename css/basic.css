@@ -1,0 +1,111 @@
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sec {
+    padding: 100px 0;
+}
+
+.sec .tit {
+    margin: 0 auto 30px auto;
+}
+
+.sec .tit h2 {
+    margin: 0 0 10px 0;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.sec .tit p {
+    font-size: 15px;
+    word-break: keep-all;
+    line-height: 19px;
+}
+
+body {
+    min-height: 150vh;
+}
+
+.wrap {}
+
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
+
+#header .gnb {
+    margin: 0 0 0 auto;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#header .service {
+    margin: 0 0 0 50px;
+}
+
+#main_visual {
+    position: relative;
+    height: 600px;
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+}
+
+#main_visual .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+}
+
+#main_visual .slogan h2 {
+    margin: 0 0 10px 0;
+    color: #fff;
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 0 0 3px #000;
+}
+
+#main_visual .slogan p {
+    color: #fff;
+    font-size: 15px;
+    text-shadow: 0 0 3px #000;
+}
+
+
+
+
+#footer {
+    padding: 50px;
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+.to_top {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+}
+
+.to_top i {
+    background: tomato;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+}

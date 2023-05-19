@@ -1,0 +1,66 @@
+#product {
+    position: relative;
+}
+
+#product .arrows {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 1400px;
+    width: 100%;
+}
+
+#product .arrows i {
+    position: absolute;
+    top: 0;
+
+    padding: 10px;
+    color: #fff;
+    background: #333;
+    border-radius: 50%;
+    font-size: 20px;
+}
+
+#product .arrows .left {
+    left: 0;
+}
+
+#product .arrows .right {
+    right: 0;
+}
+
+.product_slide {
+    margin: 0 -15px;
+}
+
+.product_slide figure {
+    padding: 0 15px;
+}
+
+/* 슬라이드 버튼 모양 */
+.product_slide .slick-dots {
+    text-align: center;
+    margin: 20px 0 0 0;
+}
+
+.product_slide .slick-dots li {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.product_slide .slick-dots li button {
+    font-size: 10px;
+    color: #fff;
+    background: #333;
+    border: none;
+    outline: none;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.product_slide .slick-dots li.slick-active button {
+    background: tomato;
+}
