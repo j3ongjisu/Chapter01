@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소의 겹침 00_position</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/00_position.css">
+
+</head>
+
+<body>
+    <h1 class="tit">00_position</h1>
+
+    <h2>01_position - absolute (상하좌우 가운데 배치)</h2>
+    <section class="sec case01">
+        <div class="itm">BOX</div>
+    </section>
+
+    <h2>02_position - absolute (꽉 채우기)</h2>
+    <section class="sec case02">
+        <div class="itm">BOX</div>
+    </section>
+
+    <h2>03_position - absolute (1200 line 왼쪽에 맞추기)</h2>
+    <section class="sec case03">
+        <div class="itm">BOX</div>
+    </section>
+
+    <h2>04_position - absolute (1200 line 오른쪽에 맞추기)</h2>
+    <section class="sec case04">
+        <div class="itm">BOX</div>
+    </section>
+
+    <!-- 실습 -->
+    <!-- 제품 3개 1200라인에 넣고,
+        마우스가 올라갔을 때 카트에 담기 버튼 나오게 만들기
+        겹쳐있기 때문에 position 씀. -->
+
+    <h2>실습 예시 01</h2>
+    <section class="sec event">
+        <div class="inner con">
+            <figure>
+                <div class="box">
+                    <img src="../images/lesedilarona01.jpg" alt="">
+                </div>
+                <div class="btn">
+                    <i class="xi-cart"></i>
+                </div>
+            </figure>
+            <figure>
+                <div class="box">
+                    <img src="../images/lesedilarona02.jpg" alt="">
+                </div>
+                <div class="btn">
+                    <i class="xi-cart"></i>
+                </div>
+            </figure>
+            <figure>
+                <div class="box">
+                    <img src="../images/lesedilarona03.jpg" alt="">
+                </div>
+                <div class="btn">
+                    <i class="xi-cart"></i>
+                </div>
+            </figure>
+        </div>
+    </section>
+
+
+    <h2>실습 예시 02</h2>
+    <section class="sec content">
+        <div class="inner con">
+            <figure>
+                <div class="box">
+                    <img src="../images/lesedilarona01.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae quisquam officiis in
+                        saepe reiciendis quos ab eaque nesciunt eos.</p>
+                    <a href="#!">MORE</a>
+
+                </div>
+            </figure>
+            <figure>
+                <div class="box">
+                    <img src="../images/lesedilarona02.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae quisquam officiis in
+                        saepe reiciendis quos ab eaque nesciunt eos.</p>
+                    <a href="#!">MORE</a>
+
+                </div>
+            </figure>
+            <figure>
+                <div class="box">
+                    <img src="../images/lesedilarona03.jpg" alt="">
+                </div>
+                <div class="cover">
+                    <h3>Lorem ipsum dolor sit.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat beatae quisquam officiis in
+                        saepe reiciendis quos ab eaque nesciunt eos.</p>
+                    <a href="#!">MORE</a>
+
+                </div>
+            </figure>
+
+        </div>
+    </section>
+
+
+    <h2>실습 예시 03</h2>
+    <section class="sec customer">
+
+        <ul class="nav">
+            <li><a href="">menu</a></li>
+            <li><a href="">menu</a></li>
+            <li><a href="">menu</a></li>
+        </ul>
+
+        <div class="inner">
+
+            <div class="list">
+                <div class="tit">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora?</p>
+                </div>
+                <div class="date">
+                    <strong>2023.05.22</strong>
+                    <i class="xi-plus"></i>
+                </div>
+            </div>
+            <div class="list">
+                <div class="tit">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora?</p>
+                </div>
+                <div class="date">
+                    <strong>2023.05.22</strong>
+                    <i class="xi-plus"></i>
+                </div>
+            </div>
+            <div class="list">
+                <div class="tit">
+                    <h3>Lorem ipsum dolor sit amet consectetur.</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, tempora?</p>
+                </div>
+                <div class="date">
+                    <strong>2023.05.22</strong>
+                    <i class="xi-plus"></i>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

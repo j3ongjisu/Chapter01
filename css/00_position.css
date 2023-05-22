@@ -1,0 +1,300 @@
+h1.tit {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.sec {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.container {
+    /* 요소 가운데로 배치 */
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid #000;
+    background: yellow;
+}
+
+.itm {
+    color: #fff;
+    text-align: center;
+    background: tomato;
+}
+
+.case01 {
+    position: relative;
+}
+
+.case01 .itm {
+    position: absolute;
+    /* top:50%
+        lfet:50% */
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+}
+
+.case02 {
+    position: relative;
+}
+
+.case02 .itm {
+    position: absolute;
+    /* top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    inset: 0 0 0 0;
+
+    /* display를 써서 요소를 가운데로 배치하기 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.case03 {
+    position: relative;
+}
+
+.case03 .itm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 기본은 가운데로 오게 하고 마진으로 위치 조정하기 */
+    margin: 0 0 0 -600px;
+    transform: translate(0, -50%);
+}
+
+.case04 {
+    position: relative;
+}
+
+.case04 .itm {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* 기본은 가운데로 오게 하고 마진으로 위치 조정하기 */
+    margin: 0 0 0 600px;
+    transform: translate(-100%, -50%);
+}
+
+
+/* 실습 예시 01 */
+.event {
+    background: tomato;
+}
+
+.event .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.event .con {
+    position: relative;
+    display: flex;
+    gap: 30px;
+}
+
+.event .con figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.event .con figure .btn {
+    position: absolute;
+    bottom: -50px;
+    right: 30px;
+    transition: 0.5s;
+}
+
+.event .con figure .btn i {
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    font-size: 30px;
+    border-radius: 50%;
+}
+
+.event .con figure:hover .btn {
+    /* left right 등 바꿔주면 버튼이
+    어디서 나올지 변경 가능 */
+    bottom: 30px;
+}
+
+/* ㅡㅡㅡㅡㅡ실습 예시 02ㅡㅡㅡㅡㅡ */
+
+.content {
+    background: #fff;
+}
+
+.content .con {
+    display: flex;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.content .con figure {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+}
+
+.content .cover {
+    position: absolute;
+    inset: 0 auto auto 100%;
+
+    width: 100%;
+    height: 100%;
+    /* opacity: 0.5;
+    background: rgb(0, 0, 255); */
+
+    /* .content .cover a (more)위치 아래로 내리기 */
+    display: flex;
+    flex-direction: column;
+
+    background: #0c4ca3cc;
+    color: #fff;
+    padding: 50px 30px;
+
+    transition: 0.5s;
+}
+
+.content .cover a {
+    background: #333;
+    padding: 5px 10px;
+    margin: auto 0 0 0;
+    align-self: flex-start;
+}
+
+.content figure:hover .cover {
+    inset: 0 auto auto 0;
+}
+
+/* ㅡㅡㅡㅡㅡ실습 예시 03ㅡㅡㅡㅡㅡ */
+.customer .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.customer .list {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 30px;
+    background: #fff;
+    margin: 0 0 10px 0;
+}
+
+/* 테두리 색 만들어주기 */
+.customer .list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0%;
+    height: 0%;
+
+    border-top: 1px solid rgb(12, 76, 163);
+    border-left: 1px solid #0c4ca3;
+
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+.customer .list:hover::before {
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+}
+
+.customer .list:hover::after {
+    width: 100%;
+    height: 100%;
+
+    visibility: visible;
+}
+
+.customer .list::after {
+    content: "";
+    position: absolute;
+    /* top left -> bottom right로 기준 바꿈 */
+    bottom: 0;
+    right: 0;
+    display: block;
+    width: 0;
+    height: 0%;
+
+    border-bottom: 1px solid #0c4ca3;
+    border-right: 1px solid #0c4ca3;
+
+    visibility: hidden;
+
+    transition: 0.5s;
+}
+
+.customer .list h3 {
+    font-size: 20px;
+    font-weight: 300;
+    margin: 0 0 10px 0;
+}
+
+/* 메뉴 */
+.customer .nav {
+    display: flex;
+    max-width: 1200px;
+    padding: 0 15px;
+    height: 100px;
+    margin: 0 auto 50px auto;
+}
+
+.customer .nav>li {
+    flex: 1;
+
+}
+
+.customer .nav>li::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 5px;
+    background: #0c4ca3;
+    /* 양 옆으로 늘어나게 하는 거 */
+    margin: 0 auto;
+    transition: 0.5s;
+}
+
+.customer .nav>li:hover::after {
+    width: 100%;
+}
+
+.customer .nav>li a {
+    /* 요소를 가운데 오게하는 옛날 방식 */
+    display: block;
+    text-align: center;
+    line-height: 100px;
+}
+
+.customer .nav>li~li {
+    border-left: 1px solid #ddd;
+}

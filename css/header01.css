@@ -1,0 +1,78 @@
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}
+
+/* clss on을 적용시키려면 붙여서 씀 */
+#header.on {
+    background: #fff;
+}
+
+#header .inner {
+    transition: 0.5s;
+}
+
+#header.on .inner {
+    height: 100px;
+}
+
+/* 다단 메뉴 */
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .gnb>ul>li>a {
+    display: block;
+    line-height: 100px;
+}
+
+#header .gnb>ul>li .sub::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg);
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    border: 1px solid #ddd;
+}
+
+#header .gnb>ul>li .sub {
+    position: absolute;
+    top: 130px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    border: 1px solid #ddd;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.5s;
+}
+
+#header .gnb>ul>li .sub li {
+    position: relative;
+    background: #fff;
+}
+
+#header .gnb>ul>li .sub li a {
+    display: block;
+}
+
+#header .gnb>ul>li:hover .sub {
+    top: 90px;
+    opacity: 1;
+    visibility: visible;
+}
+
+
+#header .gnb>ul>li .sub li~li {
+    border-top: 1px solid #ddd;
+}
