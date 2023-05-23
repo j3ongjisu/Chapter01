@@ -37,7 +37,7 @@
     top: 500px;
     left: 50%;
     transform: translate(150%, -50%);
-    transition: 1s 0.5s;
+    transition: 10s 0.5s;
 }
 
 #main_visual figure.on .car {
