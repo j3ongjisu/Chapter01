@@ -1,3 +1,9 @@
+/*슬라이드 돌릴 때 깜빡이는 거 없애는 법*/
+.slick-track,
+.slick-list {
+    transition-delay: 30ms;
+}
+
 #header {
     position: fixed;
     top: 0;

@@ -1,0 +1,45 @@
+#main_visual {
+    position: relative;
+    height: 900px;
+    background: url(../images/car-bg-w.jpg) no-repeat center center/cover;
+}
+
+#main_visual .num {
+    position: absolute;
+    top: 150px;
+    left: 50%;
+    margin: 0 0 0 585px;
+    transform: translate(-100%, 0);
+    font-size: 50px;
+}
+
+#main_visual .model {
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin: 0 0 0 585px;
+    transform: translate(-100%, 0);
+    font-size: 50px;
+}
+
+#main_visual figure {
+    position: relative;
+    height: 900px;
+    overflow: hidden;
+}
+
+#main_visual .slogan {
+    top: 200px;
+}
+
+#main_visual figure .car {
+    position: absolute;
+    top: 500px;
+    left: 50%;
+    transform: translate(150%, -50%);
+    transition: 1s 0.5s;
+}
+
+#main_visual figure.on .car {
+    transform: translate(-50%, -50%);
+}

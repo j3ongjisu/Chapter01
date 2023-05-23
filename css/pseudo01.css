@@ -1,0 +1,254 @@
+.sec {
+    padding: 100px 0;
+}
+
+.bg {
+    background: #f9f9f9;
+}
+
+h1.tit {
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.container {
+    /* 요소 가운데로 배치 */
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid #000;
+    background: yellow;
+}
+
+.itm {
+    color: #fff;
+    text-align: center;
+    background: tomato;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.sc01 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+
+    text-align: center;
+}
+
+.sc01 h3::before {
+    content: "앞";
+    margin: 0 100px 0 0;
+
+}
+
+.sc01 h3::after {
+    content: "뒤";
+
+}
+
+.sc02 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc02 h3::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: tomato;
+    margin: 30px auto;
+}
+
+.sc02 h3::before {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: tomato;
+    margin: 30px auto;
+}
+
+.sc03 h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc03 h3::before {
+    content: "";
+    display: inline-block;
+    /* vertical-align: middle -> 
+    작은 글자랑 큰 글자가 있을 때 가운데에 배치하게 함 */
+    vertical-align: 10px;
+    width: 100px;
+    height: 1px;
+    background: tomato;
+    margin: 0 10px;
+}
+
+.sc03 h3::after {
+    content: "";
+    display: inline-block;
+    /* vertical-align: middle -> 
+    작은 글자랑 큰 글자가 있을 때 가운데에 배치하게 함 */
+    vertical-align: 10px;
+    width: 100px;
+    height: 1px;
+    background: tomato;
+    margin: 0 10px;
+}
+
+/* 양쪽에 선 긋기 */
+.sc04 h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+.sc04 h3::before {
+    content: "";
+    /* width 100을 지우고 flex 1을 쓰면 선이 길어짐 */
+    flex: 1;
+    display: block;
+    /* width: 100px; */
+    height: 1px;
+    background: tomato;
+}
+
+.sc04 h3::after {
+    content: "";
+    flex: 1;
+    display: block;
+    /* width: 100px; */
+    height: 1px;
+    background: tomato;
+}
+
+.sc05 .dot {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 auto;
+    line-height: 1.4;
+}
+
+.sc05 .dot>li {
+    position: relative;
+    padding: 0 0 0 20px;
+}
+
+.sc05 .dot>li::before {
+    content: "\e921";
+    font-family: xeicon;
+    font-size: 3px;
+    color: tomato;
+    /* display: inline-block;
+    width: 2px;
+    height: 2px;
+    background: tomato;
+    vertical-align: middle; */
+    position: absolute;
+    top: 6px;
+    left: 0;
+}
+
+.sc06 .img>li::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url(../images/lesedilarona01.jpg) no-repeat center center/cover;
+    margin: 0 20px 0 0;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.sc07 .inner>li::before {
+    content: attr(data-title);
+    position: absolute;
+    top: -30px;
+    left: -30px;
+    background: tomato;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* 라벨 */
+.sc07 .inner>li::after {
+    content: "new";
+    position: absolute;
+    right: -20px;
+    bottom: 50px;
+    border-top: 10px solid tomato;
+    border-bottom: 10px solid tomato;
+    border-left: 20px solid tomato;
+    border-right: 5px solid transparent;
+    height: 0;
+    width: 60px;
+    color: #fff;
+    font-size: 10px;
+    text-transform: uppercase;
+
+    /* 라벨 안에 글자 위치 조정 법 */
+    line-height: 0;
+    text-indent: -10px;
+}
+
+
+.sc07 .inner {
+    position: relative;
+    display: grid;
+    /* 한 칸씩 차지하게 하는 법 */
+    /* grid-template-columns: repeat(3, 1fr); */
+
+    /* 반응형으로 한 칸씩 차지하게 하는 법 */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 60px 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* 별 만들기 - clip path generator 사이트 참고 */
+.sc07 .inner::after {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background: url(../images/mainvisual01.jpg) no-repeat center center/cover;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+.sc07 .inner>* {
+    position: relative;
+    border: 1px solid tomato;
+    padding: 30px;
+    background: #f9f9f9;
+}
