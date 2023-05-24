@@ -1,0 +1,138 @@
+.sec {
+    padding: 100px 0;
+}
+
+.bg {
+    background: #f9f9f9;
+}
+
+h1.tit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 50px;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    /* .ctr 때문에 사라져서 다시 띄움. */
+    z-index: 999;
+    color: #fff;
+}
+
+h2 {
+    margin: 50px 0 20px 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    background: #f9f9f9;
+}
+
+.container {
+    /* 요소 가운데로 배치 */
+    width: 1200px;
+    margin: 0 auto;
+
+    border: 1px solid #000;
+    background: yellow;
+}
+
+.itm {
+    color: #fff;
+    text-align: center;
+    background: tomato;
+}
+
+/* ㅡㅡㅡㅡㅡㅡvideoㅡㅡㅡㅡㅡㅡ  */
+
+.sec {
+    padding: 100px 0;
+
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_visual {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.main_visual video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.case01 video {
+    width: 100%px;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* 동영상 2 */
+.case01 .video {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.case01 .video>div {
+    flex: 1;
+}
+
+.control {
+    /* 인라인 블록을 딱 붙이게 함 */
+    font-size: 0;
+}
+
+.case01 i {
+    padding: 10px;
+    background: tomato;
+    color: #fff;
+    font-size: 25px;
+    margin: 0 10px 0 0;
+    cursor: pointer;
+}
+
+
+
+
+
+/* 동영상 1
+아이콘 하나로 동영상 재생, 멈춤 하기 */
+
+/* 기준은 .main_visual에 잡아둠 */
+.ctr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100px;
+    height: 100px;
+    background: tomato;
+
+    border: none;
+    outline: none;
+
+    outline: 10px solid rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+
+}
+
+.ctr::before {
+    content: "\ea3b";
+    font-family: xeicon;
+}
+
+/* 버튼 누르면 재생하게 만듦 */
+.ctr.on::before {
+    content: "\ea3e";
+}

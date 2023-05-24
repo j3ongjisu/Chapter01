@@ -1,0 +1,24 @@
+* {
+    outline: 1px solid black;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* background: #fff; */
+    z-index: 999;
+}
+
+.header .inner {
+    display: flex;
+    align-items: center;
+    height: 100px;
+}
