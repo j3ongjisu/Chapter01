@@ -1,0 +1,254 @@
+#tab_block {
+    padding: 100px 0;
+}
+
+.inner,
+.tit {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+#tab_block .tit {
+    margin: 0 auto 30px auto;
+}
+
+#tab_block .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+#tab_block .inner {
+    width: 500px;
+}
+
+.tab_link {
+    /* display: flex;*/
+    display: table;
+    width: 100%;
+    margin: 0 0 10px 0;
+}
+
+.tab_link>* {
+    /* flex: 1;*/
+    display: table-cell;
+    background: #333;
+    color: #fff;
+}
+
+.tab_link>*~* {
+    border-left: 1px solid #ddd;
+}
+
+.tab_link>*.on {
+    background: tomato;
+}
+
+.tab_link a {
+    display: block;
+    padding: 10px 20px;
+}
+
+.tab_content .con {
+    background: #f9f9f9;
+}
+
+/*.tab_content .con {
+    display: none;
+}
+
+.tab_content .con.on {
+    display: block;
+}
+*/
+
+.tab_content .con {
+    visibility: hidden;
+    height: 0;
+    overflow: hidden;
+}
+
+/*https://www.biew.co.kr/entry/%EC%9B%B9%ED%8D%BC%EB%B8%94%EB%A6%AC%EC%85%94%EA%B0%80-%EC%95%8C%EA%B3%A0%EC%9E%88%EC%96%B4%EC%95%BC-%ED%95%A0-display-table-%EC%86%8D%EC%84%B1*/
+.tab_content .con.on {
+    visibility: visible;
+    height: auto;
+}
+
+#tab_position {
+    position: relative;
+}
+
+#tab_position .sun {
+    position: absolute;
+    top: -100px;
+    right: 100px;
+    width: 100px;
+    height: 100px;
+    background: tomato;
+    border-radius: 50%;
+    color: #fff;
+    text-align: center;
+    line-height: 100px;
+    animation: sun 5s infinite linear;
+}
+
+@keyframes sun {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#tab_position .sun::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100px, -50%);
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(70px, -50%);
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-100px, -50%);
+    width: 30px;
+    height: 8px;
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun span::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100px);
+    width: 8px;
+    height: 30px;
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .sun span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70px);
+    width: 8px;
+    height: 30px;
+    border-radius: 4px;
+    background: tomato;
+}
+
+#tab_position .inner {
+    display: flex;
+    align-items: center;
+}
+
+#tab_position .tab_img {
+    position: relative;
+    width: 1000px;
+}
+
+#tab_position .tab_img img {
+    width: 1000px;
+    height: 1000px;
+    object-fit: cover;
+}
+
+.tab_map_location {
+    position: absolute;
+    inset: 0 0 0 0;
+}
+
+.tab_map_location li {
+    position: absolute;
+    display: none;
+    font-size: 0;
+}
+
+.tab_map_location li::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border-right: 10px solid tomato;
+    border-bottom: 10px solid tomato;
+    transform: rotate(45deg) translate(0, -10%);
+    opacity: 0;
+}
+
+.tab_map_location li.on::after {
+    animation: arrow 0.5s infinite;
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-100%, -100%);
+    }
+
+    50% {
+        opacity: 1;
+        transform: rotate(45deg) translate(0, 0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-100%, -100%);
+    }
+}
+
+.tab_map_location li.on {
+    display: block;
+}
+
+.tab_map_location li:nth-child(1) {
+    top: 23%;
+    left: 37%;
+}
+
+.tab_map_location li:nth-child(2) {
+    top: 30%;
+    left: 20%;
+}
+
+.tab_map_location li:nth-child(3) {
+    top: 60%;
+    left: 60%;
+}
+
+.tab_map_location li:nth-child(4) {
+    top: 80%;
+    left: 70%;
+}
+
+.tab_map_location li:nth-child(5) {
+    top: 70%;
+    left: 20%;
+}
