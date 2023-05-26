@@ -1,0 +1,45 @@
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .sub {
+    /* 원래 position 뒤에 display가 위치함.
+    다단메뉴 할 때는 예외. */
+    display: none;
+
+    position: absolute;
+    top: 120px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+
+    background: #fff;
+    text-align: center;
+    width: 120px;
+    line-height: 40px;
+}
+
+/* header01에서 hover 위치 조정으로 다단 메뉴 전체 나오게 하기 */
+#header .gnb:hover>ul>li .sub {
+    display: block;
+}
+
+#header .gnb {
+    /* position: relative; */
+}
+
+#header .gnb::before {
+    content: "";
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0px;
+    border-top: 1px solid #ddd;
+    background: #fff;
+    z-index: 999;
+}
+
+#header .gnb:hover::before {
+    height: 200px;
+}

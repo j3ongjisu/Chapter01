@@ -36,8 +36,13 @@ body {
 
 #header .inner {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     height: 100px;
+    line-height: 100px;
+}
+
+#header a {
+    display: block;
 }
 
 #header .gnb {

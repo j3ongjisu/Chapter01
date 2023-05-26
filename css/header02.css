@@ -1,0 +1,120 @@
+#header .gnb>ul>li {
+    position: relative;
+}
+
+#header .sub {
+    /* 원래 position 뒤에 display가 위치함.
+    다단메뉴 할 때는 예외. */
+    display: none;
+
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+
+    background: #fff;
+    border: 1px solid #ddd;
+    text-align: center;
+    width: 120px;
+    line-height: 40px;
+}
+
+#header .gnb>ul>li:hover .sub {
+    display: block;
+}
+
+#header .sub>li~li {
+    border-top: 1px solid #ddd;
+}
+
+.mopen {
+    display: none;
+}
+
+
+/* width가 769이하가 될 때(모바일 형) */
+@media (max-width:768px) {
+
+    .mopen {
+        display: block;
+
+        position: fixed;
+        top: 30px;
+        right: 30px;
+        z-index: 999;
+        line-height: 1;
+        cursor: pointer;
+    }
+
+    .mopen i {
+        font-size: 20px;
+        padding: 5px;
+        background: #f7f7f7;
+        border-radius: 5px;
+    }
+
+    #header.on h1 {
+        position: fixed;
+        padding: 0 15px;
+        z-index: 1000;
+    }
+
+    #header .gnb>ul>li>a {
+        line-height: 40px;
+        border-bottom: 1px solid tomato;
+    }
+
+    #header .gnb {
+        position: fixed;
+        top: 0;
+        left: -100%;
+        background: #fff;
+        width: calc(100% - 90px);
+        height: 100vh;
+        z-index: 999;
+
+        padding: 100px 30px;
+    }
+
+    #header .gnb.on {
+        left: 0;
+    }
+
+    #header .gnb>ul {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #header .gnb>ul>li {
+        position: relative;
+    }
+
+    #header .sub {
+        /* 원래 position 뒤에 display가 위치함.
+    다단메뉴 할 때는 예외. */
+        display: none;
+
+        position: static;
+
+        transform: translate(0, 0);
+
+        background: #fff;
+        border: none;
+        text-align: left;
+        width: auto;
+        line-height: 40px;
+    }
+
+    #header .gnb>ul>li:hover .sub {
+        display: none;
+    }
+
+    #header .gnb>ul>li.on .sub {
+        display: block;
+    }
+
+    #header .sub>li~li {
+        border-top: 1px solid #ddd;
+    }
+}

@@ -6,94 +6,164 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>html basic</title>
+    <link rel="stylesheet" href="./css/font.css">
     <link rel="stylesheet" href="./css/main.css">
+
+    <style>
+        hr {
+            position: relative;
+            border: none;
+            border-top: 1px solid #ddd;
+            /* 기본 속성에 overflow:hidden 속성이 있음. -> visible로 바꿔줌 */
+            overflow: visible;
+        }
+
+        hr::before {
+            content: "\ea10";
+            font-family: xeicon;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            padding: 10px;
+            color: #ddd;
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            background: #fff;
+        }
+    </style>
+
 </head>
 
+
+
 <body>
-    <div class="top">
-        <h1>html basic - 처음 배우는 html</h1>
-        <p>정지수</p>
+    <div class="wrap">
+        <div class="top">
+            <h1>html basic - 처음 배우는 html</h1>
+            <p>정지수</p>
+        </div>
+
+
+
+        <h2>기본 실습 layout</h2>
+        <ul>
+            <li><a href="./doc/basic.html">기본 실습</a></li>
+        </ul>
+
+
+
+        <hr>
+
+        <h2> css layout header part</h2>
+        <ul>
+            <li><a href="./doc/header02.html" target="_blank">header layout 1200 width + 모바일</a>( 2023-05-26 )</li>
+            <li><a href="./doc/header03.html" target="_blank">header layout 1200 width + 메뉴 늘리기</a>( 2023-05-26 )</li>
+            <li><a href="./doc/header04.html" target="_blank">header layout 1200 width + 메뉴 늘리기 + 효과</a>( 2023-05-26 )
+            </li>
+        </ul>
+
+
+        <h2>Graff main page - 실습</h2>
+        <ul>
+            <li><a href="../layout01/index.html" target="_blank">Graff main page - 실습</a></li>
+        </ul>
+
+
+
+        <h2>background</h2>
+        <ul>
+            <li><a href="./doc/background01.html" target="_blank">background 배우기 - 중요 </a> ( 2023-05-17 )</li>
+        </ul>
+
+
+
+        <h2>video</h2>
+        <ul>
+            <li><a href="./doc/video01.html" target="_blank">동영상 mp4 넣기 </a> ( 2023-05-24 )</li>
+        </ul>
+        <ul>
+            <li><a href="./doc/video02.html" target="_blank"> 백그라운드에 동영상 넣기 </a> ( 2023-05-24 )</li>
+        </ul>
+        <ul>
+            <li><a href="./doc/video03.html" target="_blank">반응형 </a> ( 2023-05-24 )</li>
+        </ul>
+
+
+
+
+        <h2>요소의 가로 배치</h2>
+        <ul>
+            <li><a href="./doc/01_display.html" target="_blank">요소의 가로 배치 01 - display:flex </a> ( 2023-05-16 )</li>
+            <li><a href="./doc/02_float.html" target="_blank">요소의 가로 배치 02 - float </a> ( 2023-05-17 )</li>
+        </ul>
+
+
+
+
+        <h2>요소의 겹침 01</h2>
+        <ul>
+
+            <li><a href="./doc/00_position.html" target="_blank">position에 대해서 배우기 </a> ( 2023-05-22 )</li>
+            <li><a href="./doc/01_position.html" target="_blank">position에 대해서 알아보기 - popup창 만듦</a> ( 2023-05-19 )</li>
+            <li><a href="./doc/02_position.html" target="_blank">position에 대해서 알아보기 - 우는 얼굴 만들기</a> ( 2023-05-19 )</li>
+            <li><a href="./doc/03_position.html" target="_blank">position에 대해서 알아보기 - 사방으로 배너를 만들어 보자</a> ( 2023-05-19 )
+            </li>
+        </ul>
+
+
+
+        <h2>slider - main visual</h2>
+        <ul>
+            <li>
+                <a href="./doc/mainVisual01.html" target="_blank">메인 비주얼 반응형 슬라이드 </a> ( 2023-05-17 )
+            </li>
+        </ul>
+
+
+
+
+        <h2>slider - content</h2>
+        <ul>
+            <li>
+                <a href="./doc/product01.html" target="_blank">제품 슬라이드 </a> ( 2023-05-17 )
+            </li>
+        </ul>
+
+
+
+
+        <h2> Tab menu 01 - display : none, block으로 공간 제어하기</h2>
+        <ul>
+            <li>
+                <a href="./doc/tab01.html" target="_blank"> display : none, block </a> ( 2023-05-25 )
+            </li>
+        </ul>
+
+
+
+
+        <h2>header - 색깔 바꾸기</h2>
+        <ul>
+            <li><a href="./doc/header01.html" target="_blank">header 색깔 바꾸기 </a>(2023-05-22)</li>
+        </ul>
+
+
+
+        <h2>가상요소 - ::before , ::after</h2>
+        <ul>
+            <li><a href="./doc/pseudo-element01.html" target="_blank">가상요소 </a>(2023-05-23)</li>
+        </ul>
+
+
+
+        <h2>자동차 슬라이드</h2>
+        <ul>
+            <li><a href="./doc/slick_main_animation01.html" target="_blank">자동차 슬라이드 </a>(2023-05-23)</li>
+        </ul>
     </div>
-    <h2>기본 실습 layout</h2>
-    <ul>
-        <li><a href="./doc/basic.html">기본 실습</a></li>
-    </ul>
-    <h2>Graff main page - 실습</h2>
-    <ul>
-        <li><a href="../layout01/index.html">Graff main page - 실습</a></li>
-    </ul>
-
-    <h2>background</h2>
-    <ul>
-        <li><a href="./doc/background01.html">background 배우기 - 중요 </a> ( 2023-05-17 )</li>
-    </ul>
-
-    <h2>video</h2>
-    <ul>
-        <li><a href="./doc/video01.html">동영상 mp4 넣기 </a> ( 2023-05-24 )</li>
-    </ul>
-    <ul>
-        <li><a href="./doc/video02.html"> 백그라운드에 동영상 넣기 </a> ( 2023-05-24 )</li>
-    </ul>
-    <ul>
-        <li><a href="./doc/video03.html">반응형 </a> ( 2023-05-24 )</li>
-    </ul>
-
-    <h2>요소의 가로 배치</h2>
-    <ul>
-        <li><a href="./doc/01_display.html" target="_blank">요소의 가로 배치 01 - display:flex </a> ( 2023-05-16 )</li>
-        <li><a href="./doc/02_float.html" target="_blank">요소의 가로 배치 02 - float </a> ( 2023-05-17 )</li>
-    </ul>
-
-
-    <h2>요소의 겹침 01</h2>
-    <ul>
-
-        <li><a href="./doc/00_position.html" target="_blank">position에 대해서 배우기 </a> ( 2023-05-22 )</li>
-        <li><a href="./doc/01_position.html" target="_blank">position에 대해서 알아보기 - popup창 만듦</a> ( 2023-05-19 )</li>
-        <li><a href="./doc/02_position.html" target="_blank">position에 대해서 알아보기 - 우는 얼굴 만들기</a> ( 2023-05-19 )</li>
-        <li><a href="./doc/03_position.html" target="_blank">position에 대해서 알아보기 - 사방으로 배너를 만들어 보자</a> ( 2023-05-19 )
-        </li>
-    </ul>
-
-    <h2>slider - main visual</h2>
-    <ul>
-        <li>
-            <a href="./doc/mainVisual01.html" target="_blank">메인 비주얼 반응형 슬라이드 </a> ( 2023-05-17 )
-        </li>
-    </ul>
-
-    <h2>slider - content</h2>
-    <ul>
-        <li>
-            <a href="./doc/product01.html" target="_blank">제품 슬라이드 </a> ( 2023-05-17 )
-        </li>
-    </ul>
-
-
-
-    <h2> Tab menu 01 - display : none, block으로 공간 제어하기</h2>
-    <ul>
-        <li>
-            <a href="./doc/tab01.html" target="_blank"> display : none, block </a> ( 2023-05-25 )
-        </li>
-    </ul>
-
-
-
-
-    <h2>header - 색깔 바꾸기</h2>
-    <ul>
-        <li><a href="./doc/header01.html" target="_blank">header 색깔 바꾸기 </a>(2023-05-22)</li>
-    </ul>
-    <h2>가상요소 - ::before , ::after</h2>
-    <ul>
-        <li><a href="./doc/pseudo-element01.html" target="_blank">가상요소 </a>(2023-05-23)</li>
-    </ul>
-    <h2>자동차 슬라이드</h2>
-    <ul>
-        <li><a href="./doc/slick_main_animation01.html" target="_blank">자동차 슬라이드 </a>(2023-05-23)</li>
-    </ul>
 </body>
+
 
 </html>
