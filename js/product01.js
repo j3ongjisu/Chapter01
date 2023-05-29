@@ -7,17 +7,17 @@ $(function () {
             {
                 breakpoint: 768,
                 settings: {
-                    slidesToShow: 1,
+                    slidesToShow: 2,
                 }
-            },
+            }
         ]
     });
 
     $('#product .arrows .left').on('click', function () {
-        $('.product_slide').slick('slcikPrev');
-    })
+        $('.product_slide').slick('slickPrev');
+    });
     $('#product .arrows .right').on('click', function () {
-        $('.product_slide').slick('slcikNext');
+        $('.product_slide').slick('slickNext');
     });
 
 })
