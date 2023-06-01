@@ -1,0 +1,87 @@
+.main_visual {
+    position: relative;
+}
+
+.main_visual .main_bg {
+    height: 100vh;
+    background: #369;
+}
+
+.main_visual .bottom_link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+
+    height: 150px;
+    width: calc((100% - 1200px) /2 + 1185px);
+    background: yellow;
+}
+
+/* section 2 */
+.main_event {
+    padding: 100px 0;
+}
+
+.main_event .inner {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_event .content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #f9f9f9;
+
+    padding: 0 50px;
+}
+
+.main_event .content h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+/* section 3 */
+.main_content {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.main_content .tit,
+.main_content .inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.main_content .tit {
+    margin: 0 auto 30px auto;
+}
+
+.main_content .tit h2 {
+    font-size: 30px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.main_content .content {
+    display: flex;
+    gap: 30px;
+}
+
+.main_content .content .box {
+    margin: 0 0 15px 0;
+}
+
+.main_content .content>* {
+    flex: 1;
+}
