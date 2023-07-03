@@ -1,0 +1,105 @@
+body {
+    color: #444;
+    line-height: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section .tit {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.section .tit h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.section .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#header {
+    border: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100px;
+    align-items: center;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#mainContent .inner {
+    display: flex;
+    gap: 30px;
+}
+
+#mainContent .inner>* {
+    flex: 1;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#mainContent .img_box {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+    transition: 0.5s;
+}
+
+#mainContent figure:hover {
+    background: #369;
+    color: #fff;
+}
+
+#mainContent figure:hover .img_box {
+    transform: rotateY(180deg);
+}
+
+#mainContent figure strong {
+    display: block;
+    margin: 0 0 17px 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+#mainContent figure .desc {
+    font-size: 15px;
+    line-height: 21px;
+    margin: 0 0 17px 0;
+    min-height: 100px;
+}
+
+#mainContent figure a {
+    display: inline-block;
+    padding: 10px 25px;
+    background: tomato;
+    color: #fff;
+    border-radius: 5px;
+}

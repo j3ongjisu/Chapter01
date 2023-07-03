@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/font.css">
+    <link rel="stylesheet" href="../css/slick.css">
+    <link rel="stylesheet" href="../css/section_detail01.css">
+
+    <script src="../js/jquery-1.12.4.min.js"></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/basic.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="inner">
+                <h1>
+                    <a href="#!">
+                        <img src="../images/grafflogo.png" alt="">
+                    </a>
+                </h1>
+                <nav class="gnb">
+                    <ul>
+                        <li><a href="#!">menu01</a></li>
+                        <li><a href="#!">menu02</a></li>
+                        <li><a href="#!">menu03</a></li>
+                        <li><a href="#!">menu04</a></li>
+                        <li><a href="#!">menu05</a></li>
+                    </ul>
+                </nav>
+                <div class="service">
+                    <i class="xi-bars"></i>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section id="main_visual">
+                <div class="slogan inner">
+                    <h2>Lorem ipsum dolor sit amet.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic enim numquam veritatis assumenda
+                        tempora corporis. Distinctio similique in voluptate tempora.</p>
+                </div>
+            </section>
+
+            <section id="detail01" class="sec">
+                <div class="tit">
+                    <h2>Lorem ipsum dolor sit.</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, cumque. Obcaecati quod aliquam
+                        aliquid perspiciatis debitis totam similique.</p>
+                </div>
+                <div class="inner content">
+                    <div class="itm itm01 on">
+                        <div class="txt">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi laborum! Sit
+                                animi itaque magnam, voluptatum nihil praesentium.</p>
+                            <a href="">MORE</a>
+                        </div>
+                    </div>
+                    <div class="itm itm02">
+
+                        <div class="txt">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <p>LorLorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi laborum! Sit
+                                animi itaque magnam, em ipsum dolor sit amet consectetur adipisicing elit. Rerum,
+                                eligendi laborum! Sit
+                                animi itaque magnam, voluptatum nihil praesentium.</p>
+                            <a href="">MORE</a>
+                        </div>
+                    </div>
+                    <div class="itm itm01">
+                        <div class="txt">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi laborum! Sit
+                                animi itaque magnam, voluptatum nihil praesentium.</p>
+                            <a href="">MORE</a>
+                        </div>
+                    </div>
+                    <div class="itm itm02">
+                        <div class="txt">
+                            <h3>Lorem ipsum dolor sit.</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, eligendi laborum! Sit
+                                animi itaque magnam, voluptatum nihil praesentium.</p>
+                            <a href="">MORE</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+
+
+        </main>
+        <footer id="footer" class="footer">
+            <div class="inner">
+                &copy; lee.
+            </div>
+        </footer>
+        <div class="to_top">
+            <i class="xi-arrow-up"></i>
+        </div>
+    </div>
+
+    <script>
+        $(function () {
+            $('#detail01 .itm').on('click', function () {
+                $(this).addClass('on').siblings().removeClass('on');
+            })
+        })
+    </script>
+</body>
+
+</html>

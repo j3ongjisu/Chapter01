@@ -1,0 +1,161 @@
+.tit {
+    max-width: 1200px;
+    padding: 0 15px;
+}
+
+#header .service i {
+    position: relative;
+    font-size: 20px;
+}
+
+#header .service i small {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: tomato;
+    color: #fff;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+#hover01 .inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px 30px;
+}
+
+#hover01 .inner>* {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+#hover01 .img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#hover01 .img_box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#hover01 .txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#hover01 .txt a {
+    margin: auto 0 30px 0;
+}
+
+#hover01 .itm .case {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#hover01 .itm:hover .case {
+    top: 0;
+    transition: 0.5s;
+}
+
+#hover01 .itm.on .case {
+    top: 0;
+    transition: 0.5s;
+}
+
+
+
+#hover01 .itm strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}
+
+
+
+#slide {
+    padding: 200px 0;
+    background: #444;
+}
+
+#slide .pro_slide {
+    margin: 0 -15px;
+}
+
+#slide .inner .itm {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+
+    margin: 0 15px;
+}
+
+#slide .img_box {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#slide .img_box img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+#slide .txt {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+    padding: 50px 30px 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+#slide .txt a {
+    margin: auto 0 30px 0;
+}
+
+#slide .itm .case {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+#slide .itm.on .case {
+    top: 0;
+    transition: 0.5s;
+}
+
+
+
+#slide .itm strong {
+    display: block;
+    margin: 0 0 20px 0;
+    font-weight: 700;
+}

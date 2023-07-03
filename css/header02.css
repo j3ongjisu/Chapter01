@@ -1,3 +1,31 @@
+#header {
+    border-bottom: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    /* align-items: center; */
+    height: 100px;
+    line-height: 100px;
+}
+
+#header a {
+    display: block;
+}
+
+#header .gnb {
+    margin: 0 0 0 auto;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#header .service {
+    margin: 0 0 0 50px;
+}
+
 #header .gnb>ul>li {
     position: relative;
 }

@@ -12,7 +12,7 @@
     z-index: 999;
 }
 
-/* clss on을 적용시키려면 붙여서 씀 */
+/* class on을 적용시키려면 붙여서 씀 */
 #header.on {
     background: #fff;
 }

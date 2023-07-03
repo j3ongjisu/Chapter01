@@ -1,0 +1,85 @@
+body {
+    color: #444;
+    line-height: 1;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section .tit {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.section .tit h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.section .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#header {
+    border: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100px;
+    align-items: center;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#mainContent .inner {
+    display: flex;
+    gap: 30px;
+}
+
+
+#mainContent .inner figure {
+    flex: 1;
+    /* 
+    슬라이드 넣어서 늘어날 경우에 대처 방법
+    overflow: hidden;
+    min-width: 0; */
+}
+
+#mainContent2 .inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+#mainContent3 .inner {
+    padding: 0 0;
+    overflow: hidden;
+}
+
+#mainContent3 .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#mainContent3 .inner figure {
+    float: left;
+    width: 33.33333333%;
+    padding: 0 15px;
+}

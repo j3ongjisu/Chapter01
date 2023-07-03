@@ -1,0 +1,94 @@
+body {
+    color: #444;
+    line-height: 1;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section {
+    padding: 100px 0;
+}
+
+.section .tit {
+    max-width: 1200px;
+    margin: 0 auto 50px auto;
+    padding: 0 15px;
+}
+
+.section .tit h2 {
+    font-size: 40px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.section .tit p {
+    font-size: 15px;
+    font-weight: 300;
+}
+
+#header {
+    border: 1px solid #ddd;
+}
+
+#header .inner {
+    display: flex;
+    justify-content: space-between;
+
+    height: 100px;
+    align-items: center;
+}
+
+#header .gnb>ul {
+    display: flex;
+    gap: 40px;
+}
+
+#mainContent .inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#mainContent .inner figure {
+    flex: 1 0 50%;
+}
+
+
+#mainContent .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}
+
+#mainContent2 .inner {
+    display: grid;
+    /* grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));*/
+    grid-template-columns: 1fr 1fr
+}
+
+#mainContent2 .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}
+
+#mainContent3 .inner::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#mainContent3 .inner figure {
+    float: left;
+    width: 50%;
+    height: 272px;
+}
+
+#mainContent3 .inner figure:nth-child(2) {
+    border: 1px solid tomato;
+}
