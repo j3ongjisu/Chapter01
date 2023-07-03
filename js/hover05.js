@@ -3,12 +3,11 @@ $(function () {
         $('html, body').animate({ scrollTop: 0 }, 500);
     });
 
-
     $('.pro_slide').on('init afterChange', function () {
-        const current = $('.pro_slide .slick-center');
-        current.addClass('on').siblings().removeClass('on')
+        const current = $('.pro_slide .slick-current');
+        current.addClass('on').siblings().removeClass('on');
         console.log(current);
-    });
+    })
 
     $('.pro_slide').slick({
         arrows: false,
@@ -16,7 +15,7 @@ $(function () {
         centerMode: true,
         centerPadding: 0,
         autoplay: true,
-        autoplaySpeed: 1000,
+        autoplaySpeed: 2000,
         speed: 200,
-    });
-});
+    })
+})
